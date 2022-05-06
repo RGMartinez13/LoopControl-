@@ -21,3 +21,51 @@ for age in ages:
   if age < 21:
     continue
   print(age)
+  
+#nested loops - meaning we can split a list 
+  
+project_teams = [["Ava", "Samantha", "James"], ["Lucille", "Zed"], ["Edgar", "Gabriel"]]
+
+for team in project_teams:
+  print(team)
+  
+#["Ava", "Samantha", "James"]
+#["Lucille", "Zed"]
+#["Edgar", "Gabriel"]
+
+
+# Loop through each sublist
+for team in project_teams:
+  # Loop elements in each sublist
+  for student in team:
+    print(student)
+    
+#would output
+#Ava
+#Samantha
+#James
+#Lucille
+#Zed
+#Edgar
+#Gabriel
+
+
+
+#let’s say we had a list of integers and wanted to create a list where each element is doubled.
+#We could accomplish this using a for loop and a new list called doubled
+
+numbers = [2, -1, 79, 33, -45]
+doubled = []
+ 
+for number in numbers:
+  doubled.append(number * 2)
+  
+#output [4, -2, 158, 66, -90]
+
+ 
+print(doubled)
+
+
+
+
+
