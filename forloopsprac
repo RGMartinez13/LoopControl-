@@ -1,0 +1,23 @@
+dog_breeds_available_for_adoption = ["french_bulldog", "dalmatian", "shihtzu", "poodle", "collie"]
+dog_breed_I_want = "dalmatian"
+
+
+#we want to search a list to check if a specific value exists
+for dog_breed in dog_breeds_available_for_adoption:
+  print(dog_breed)
+  
+  if dog_breed == dog_breed_I_want:
+    print("They have the dog I want!")
+    break
+
+
+#Your computer is the doorman at a bar in a country where the drinking age is 21.
+#Loop through the ages list. If an entry is less than 21, skip it and move to the next entry. Otherwise, print() the age.
+
+
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for age in ages:
+  if age < 21:
+    continue
+  print(age)
